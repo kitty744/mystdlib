@@ -16,31 +16,52 @@
 - This will run the test.py file provided by me, however you can make your own files/edit the code.
 
 # Modules
+
+# DATA
 - array
-- stack
-- queue
 - linkedlist
+- queue
+- stack
+
+# EXTRA
+- http
+- json
+- progress
+- random
+
+# IO
+- file
+
+# SYSTEM
+- env
+- os
+- permissions
+- process_manager
+- process
+- system_info
+
+# TIME
 - time
 - timer
-- config
-- logger
-- clipboard
-- input
-- validater
-- path
-- hash
-- schedule
-- color
-- events
-- compression
+
+# UTILS
 - cache
-- observer
-- progress
-- serializer
-- process
-- process_manager
-- retry
-- throttle
+- clipboard
+- color
+- compression
+- config
 - debounce
-- permissions
-- system_info
+- events
+- hash
+- logger
+- math
+- myinput
+- observer
+- path
+- printer
+- retry
+- schedule
+- serializer
+- string
+- throttle
+- validator
