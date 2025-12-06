@@ -1,22 +1,23 @@
-# MYSTDLIB - A simple stdlib remake
-- This is a simple stdlib remake in python
-- This is not better then the std in anyway, it's just for learning purposes
-- This is also In early development.
-- See instructions for running below.
+# MYSTDLIB
+- A simple remake of the standard library provided by python.
+- Made for learning purposes, not meant to replace anything.
+- In VERY early development, and only contains barebones right now.
+- Updates every day?
+- Instructions below
 
-#1 Windows
-- First fork the project Into (Visual Studio Code).
-- Make sure you have python installed
-- Add some code to test.py
-- To run it, open the vscode terminal (ctrl + shift + ~), then type (python test.py)
+# Windows
+- Must have the following: python, visual studio code.
+- Open a visual studio code terminal and run the following command: (python test.py)
+- This will run the test.py file provided by me, however you can make your own files/edit the code.
 
-#2 Linux
-- First fork the project Into (Visual Studio Code).
-- Make sure you have python installed
-- Add some code to test.py
-- To run it, open the vscode terminal (ctrl + shift + ~), then type (python3 test.py)
+# Linux
+- Must have the following: python3, visual studio code.
+- Open a visual studio code terminal and run the following command: (python3 test.py)
+- This will run the test.py file provided by me, however you can make your own files/edit the code.
 
 
-# Examples
-Example: Print's hello world with current date and time
-![Screenshot of example](assets/example_hw.png)
+# Tutorial
+- I reccomend you use the test.py file provided in the main directory of the project to write your code using this library.
+- When you run the code already in it, you should see this in the console:
+
+![Screenshot](assets/example_output.png)

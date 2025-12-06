@@ -1,8 +1,15 @@
-from mylib import system_info, printer
+from mylib import *
 
-printer.println(system_info.os_info())
-printer.println(system_info.cpu_info())
-printer.println(system_info.memory_info())
-printer.println(system_info.disk_info())
-printer.println(system_info.python_info())
-printer.println(system_info.full_system_info())
+logger.info("Started program!")
+
+# ---- Print some math ----
+printer.print("The higher number is: ")
+printer.println(math.max(1, 2))
+
+# ---- Print some text with colors and more! ----
+printer.println(color.red("This text is red!"))
+printer.println(color.green("This text is green!"))
+printer.println(color.blue("This text is blue!"))
+printer.println(color.yellow("This text is yellow!"))
+printer.println(color.underline("This text has an underline"))
+
