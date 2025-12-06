@@ -12,3 +12,4 @@ from . import schedule
 from . import color
 from . import events
 from . import compression
+from . import cache
