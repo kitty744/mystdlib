@@ -1,3 +1,3 @@
 from . import math
 from . import string
-from . import os
+from . import array
