@@ -18,4 +18,4 @@
 
 
 # Examples
-![Alt text](/gh/ss/exaple_hw.png?raw=true "Optional Title")
+![Screenshot of example](gh/ss/screenshot.png)
