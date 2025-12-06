@@ -18,4 +18,4 @@
 
 
 # Examples
-![Screenshot of example](gh/ss/screenshot.png)
+![Screenshot of example](assets/example_hw.png)
