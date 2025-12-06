@@ -16,7 +16,7 @@
 - This will run the test.py file provided by me, however you can make your own files/edit the code.
 
 # Tutorial
-- I reccomend you use the test.py file provided in the main directory of the project to write your code using this library.
+- I recommend you use the test.py file provided in the main directory of the project to write your code using this library.
 - When you run the code already in it, you should see this in the console:
 
 <p align="center"> <img src="assets/example_output.png" alt="Screenshot of my app" width="600"> </p>
