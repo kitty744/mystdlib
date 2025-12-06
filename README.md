@@ -20,3 +20,33 @@
 - When you run the code already in it, you should see this in the console:
 
 <p align="center"> <img src="assets/example_output.png" alt="Screenshot of my app" width="600"> </p>
+
+# Modules
+- array
+- stack
+- queue
+- linkedlist
+- time
+- timer
+- config
+- logger
+- clipboard
+- input
+- validater
+- path
+- hash
+- schedule
+- color
+- events
+- compression
+- cache
+- observer
+- progress
+- serializer
+- process
+- process_manager
+- retry
+- throttle
+- debounce
+- permissions
+- system_info
