@@ -1,11 +1,14 @@
-from mylib import process
+from mylib import retry
 
-output = process.run("echo Hello World")
-print(output)
+count = 0
 
-proc = process.run_async("ping google.com")
-print(proc.pid)
+@retry.retry(attempts=5, delay=1, backoff=2, exceptions=(ValueError,))
+def test():
+    global count
+    count += 1
+    print("Attempt", count)
+    if count < 4:
+        raise ValueError("Failing!")
+    return "Success!"
 
-process.kill(proc.pid)
-
-print(process.exists(proc.pid))
+print(test())
