@@ -1,4 +1,3 @@
-from mylib import println, time
+from mylib import random, println
 
-println("Hello World!" + time.now())
-
+println(random.random())

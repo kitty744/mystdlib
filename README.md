@@ -18,5 +18,5 @@
 
 
 # Examples
-Example: Print's hello world with current date and time:
+Example: Print's hello world with current date and time
 ![Screenshot of example](assets/example_hw.png)
