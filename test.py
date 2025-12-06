@@ -1,16 +1,11 @@
-from mylib import serializer
+from mylib import process
 
-class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+output = process.run("echo Hello World")
+print(output)
 
+proc = process.run_async("ping google.com")
+print(proc.pid)
 
-p = Person("John doe", 37)
+process.kill(proc.pid)
 
-
-serializer.save_json(p, "person.json")
-p2 = serializer.load_json("person.json", cls=Person)
-
-serializer.save_binary(p, "person.bin")
-p3 = serializer.load_binary("person.bin")
+print(process.exists(proc.pid))
