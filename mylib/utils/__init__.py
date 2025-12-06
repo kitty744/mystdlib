@@ -9,3 +9,4 @@ from . import validator
 from . import path
 from . import hash
 from . import schedule
+from . import color

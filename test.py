@@ -1,7 +1,7 @@
-from mylib import schedule, printer
+from mylib import color, printer
 
-def hello(name):
-    printer.println("Hello: ", name)
-
-schedule.after(3, hello, "John Doe")
-schedule.every(0.1, hello, "Jill Doe")
+printer.println(color.red("This text is red"))
+printer.println(color.green("This text is green"))
+printer.println(color.blue("This text is blue"))
+printer.println(color.yellow("This text is yellow"))
+printer.println(color.underline("This text has an underline"))
