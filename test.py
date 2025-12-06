@@ -1,18 +1,11 @@
-from mylib import observer, printer
+import time
+from mylib import progress
 
-def callbacktest1(val):
-    printer.print("Callback 1:", val)
+total = 20
+start_time = time.time()
+spinner_index = 0
 
-def callbacktest2(val):
-    printer.print("Callback 2:", val)
-
-observer.watch("score", callbacktest1)
-observer.watch("score", callbacktest2)
-
-observer.set_value("score", 10)
-observer.set_value("score", 20)
-
-observer.unwatch("score", callbacktest1)
-observer.set_value("score", 30)
-
-printer.print("Current score:", observer.get_value("score"))
+for i in range(total + 1):
+    progress.progress(i, total, prefix="Loading: ", start_time=start_time, spinner_index=spinner_index)
+    spinner_index += 1
+    time.sleep(0.1)
