@@ -7,3 +7,4 @@ from . import clipboard
 from . import myinput
 from . import validator
 from . import path
+from . import hash
