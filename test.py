@@ -1,5 +1,4 @@
-from mylib import clipboard, printer
+from mylib import myinput, printer
 
-clipboard.copy("Hello World!")
-
-printer.println(clipboard.paste())
+user_input = myinput.input("Prompt: ")
+printer.println(user_input)
