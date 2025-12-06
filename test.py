@@ -1,7 +1,12 @@
-from mylib import color, printer
+from mylib import events, printer
 
-printer.println(color.red("This text is red"))
-printer.println(color.green("This text is green"))
-printer.println(color.blue("This text is blue"))
-printer.println(color.yellow("This text is yellow"))
-printer.println(color.underline("This text has an underline"))
+def hello(name):
+    printer.println("Hello: ", name)
+
+events.on("greet", hello)
+
+if (1 == 1):
+    events.trigger("greet", "John doe")
+
+events.off("greet", hello)
+events.trigger("greet", "Jill doe")
