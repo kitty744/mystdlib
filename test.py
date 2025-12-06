@@ -1,12 +1,18 @@
-from mylib import events, printer
+from mylib import observer, printer
 
-def hello(name):
-    printer.println("Hello: ", name)
+def callbacktest1(val):
+    printer.print("Callback 1:", val)
 
-events.on("greet", hello)
+def callbacktest2(val):
+    printer.print("Callback 2:", val)
 
-if (1 == 1):
-    events.trigger("greet", "John doe")
+observer.watch("score", callbacktest1)
+observer.watch("score", callbacktest2)
 
-events.off("greet", hello)
-events.trigger("greet", "Jill doe")
+observer.set_value("score", 10)
+observer.set_value("score", 20)
+
+observer.unwatch("score", callbacktest1)
+observer.set_value("score", 30)
+
+printer.print("Current score:", observer.get_value("score"))

@@ -13,3 +13,4 @@ from . import color
 from . import events
 from . import compression
 from . import cache
+from . import observer
