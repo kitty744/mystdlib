@@ -6,3 +6,4 @@ from . import logger
 from . import clipboard
 from . import myinput
 from . import validator
+from . import path
