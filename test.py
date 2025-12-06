@@ -1,3 +1,5 @@
-from mylib import logger
+from mylib import clipboard, printer
 
-logger.info("Starting!")
+clipboard.copy("Hello World!")
+
+printer.println(clipboard.paste())
