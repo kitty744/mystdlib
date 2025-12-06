@@ -1,3 +1,7 @@
-from mylib import hash, printer
+from mylib import schedule, printer
 
-printer.println(hash.md5("hello"))
+def hello(name):
+    printer.println("Hello: ", name)
+
+schedule.after(3, hello, "John Doe")
+schedule.every(0.1, hello, "Jill Doe")
