@@ -1,14 +1,11 @@
-from mylib import retry
+from mylib import throttle
+import time
 
-count = 0
+@throttle.throttle(10)
+def hello():
+    print("Hello!")
 
-@retry.retry(attempts=5, delay=1, backoff=2, exceptions=(ValueError,))
-def test():
-    global count
-    count += 1
-    print("Attempt", count)
-    if count < 4:
-        raise ValueError("Failing!")
-    return "Success!"
-
-print(test())
+hello()
+hello()
+time.sleep(10.1)
+hello()
