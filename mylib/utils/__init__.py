@@ -17,3 +17,4 @@ from . import observer
 from . import serializer
 from . import retry
 from . import throttle
+from . import debounce

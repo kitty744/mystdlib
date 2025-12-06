@@ -1,11 +1,12 @@
-from mylib import throttle
+from mylib import debounce
 import time
 
-@throttle.throttle(10)
-def hello():
-    print("Hello!")
+@debounce.debounce(1.0)
+def greet():
+    print("Greetings!")
 
-hello()
-hello()
-time.sleep(10.1)
-hello()
+    
+greet()
+greet()
+greet()
+time.sleep(1.2)
