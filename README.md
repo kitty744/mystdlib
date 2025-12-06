@@ -16,6 +16,8 @@
 - This will run the test.py file provided by me, however you can make your own files/edit the code.
 
 # Modules
+- Here you can find every module included in this library
+
 
 # DATA
 - array
