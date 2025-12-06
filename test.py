@@ -1,11 +1,16 @@
-import time
-from mylib import progress
+from mylib import serializer
 
-total = 20
-start_time = time.time()
-spinner_index = 0
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-for i in range(total + 1):
-    progress.progress(i, total, prefix="Loading: ", start_time=start_time, spinner_index=spinner_index)
-    spinner_index += 1
-    time.sleep(0.1)
+
+p = Person("John doe", 37)
+
+
+serializer.save_json(p, "person.json")
+p2 = serializer.load_json("person.json", cls=Person)
+
+serializer.save_binary(p, "person.bin")
+p3 = serializer.load_binary("person.bin")

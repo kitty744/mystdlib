@@ -14,3 +14,4 @@ from . import events
 from . import compression
 from . import cache
 from . import observer
+from . import serializer
