@@ -6,7 +6,7 @@ def print(*args):
     for arg in args:
         output += str(arg) + " "
 
-    sys.stdout.write(output.rstrip() + "\n")
+    sys.stdout.write(output.rstrip())
 
 def println(*args):
     output = ""

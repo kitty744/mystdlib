@@ -18,11 +18,11 @@ printer.println("This is what you got on your clipboard: " + clipboard.paste())
 
 # ---- Random module ----
 printer.println("This is a random integer: ")
-printer.print(random.randint(1, 100))
+printer.println(random.randint(1, 100))
 
 # ---- Schedule module ----
 def tick():
-    printer.print("Tick")
+    printer.println("Tick")
     
 schedule.every(2, tick)
 
