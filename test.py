@@ -13,3 +13,10 @@ printer.println(color.blue("This text is blue!"))
 printer.println(color.yellow("This text is yellow!"))
 printer.println(color.underline("This text has an underline"))
 
+# ---- Schedule module ----
+def tick():
+    printer.print("Tick")
+    
+schedule.every(2, tick)
+
+time.sleep(10)
