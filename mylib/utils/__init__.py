@@ -11,6 +11,7 @@ from . import hash
 from . import schedule
 from . import color
 from . import events
+from . import event_emitter
 from . import compression
 from . import cache
 from . import observer
