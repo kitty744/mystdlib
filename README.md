@@ -33,6 +33,7 @@
 
 # IO
 - file
+- locks
 
 # SYSTEM
 - env
@@ -54,6 +55,7 @@
 - config
 - debounce
 - events
+- event_emitter
 - hash
 - logger
 - math
